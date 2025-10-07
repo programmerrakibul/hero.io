@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+a.nav-links {
+  @apply font-medium text-base opacity-90 bg-transparent duration-300;
+}
+
+a.nav-links:hover {
+  @apply text-[#632EE3] underline;
+}
+
+a.nav-links.active {
+  @apply text-[#632EE3] underline font-semibold;
+}
+
+a.nav-btn {
+  @apply btn font-semibold text-base text-white bg-gradient-to-br from-[#632EE3] to-[#9F62F2];
+}
