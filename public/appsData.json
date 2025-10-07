@@ -1,0 +1,290 @@
+[
+  {
+    "image": "https://i.ibb.co/hJHC49f9/Eco-Notes.png",
+    "title": "Eco Notes",
+    "companyName": "GreenPixel Labs",
+    "id": 101,
+    "description": "Eco Notes is a minimalist note-taking app designed for sustainability-conscious users. It features offline access, dark mode, and cloud sync with zero carbon footprint. The app uses AI-powered organization to automatically categorize your notes and offers end-to-end encryption for maximum privacy. Perfect for students, professionals, and environmental advocates.",
+    "size": 24.5,
+    "reviews": 1287,
+    "ratingAvg": 4.6,
+    "downloads": 85000,
+    "ratings": [
+      { "name": "1 star", "count": 45 },
+      { "name": "2 star", "count": 62 },
+      { "name": "3 star", "count": 134 },
+      { "name": "4 star", "count": 298 },
+      { "name": "5 star", "count": 748 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/XxPVkN6d/Fit-Tracker-Pro.png",
+    "title": "FitTracker Pro",
+    "companyName": "HealthTech Solutions",
+    "id": 102,
+    "description": "FitTracker Pro is your ultimate fitness companion with real-time workout tracking and personalized training plans. It integrates with popular smartwatches and offers detailed analytics of your progress. The app includes guided meditation sessions, nutrition planning, and social challenges to keep you motivated. Syncs seamlessly with Apple Health and Google Fit.",
+    "size": 87.3,
+    "reviews": 25431,
+    "ratingAvg": 4.8,
+    "downloads": 1250000,
+    "ratings": [
+      { "name": "1 star", "count": 312 },
+      { "name": "2 star", "count": 498 },
+      { "name": "3 star", "count": 2156 },
+      { "name": "4 star", "count": 8542 },
+      { "name": "5 star", "count": 13923 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/7Jy6yHz1/Budget-Buddy.png",
+    "title": "Budget Buddy",
+    "companyName": "FinanceWise Inc",
+    "id": 103,
+    "description": "Budget Buddy helps you take control of your finances with intuitive expense tracking and smart budgeting tools. It automatically categorizes your transactions and provides detailed spending reports. The app features bill reminders, savings goals, and investment tracking. Bank-level security ensures your financial data remains completely safe and private.",
+    "size": 45.2,
+    "reviews": 8923,
+    "ratingAvg": 4.5,
+    "downloads": 450000,
+    "ratings": [
+      { "name": "1 star", "count": 156 },
+      { "name": "2 star", "count": 287 },
+      { "name": "3 star", "count": 1245 },
+      { "name": "4 star", "count": 3256 },
+      { "name": "5 star", "count": 3979 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/hJbpK706/Recipe-Master.png",
+    "title": "Recipe Master",
+    "companyName": "Culinary Arts Digital",
+    "id": 104,
+    "description": "Recipe Master brings thousands of chef-curated recipes to your kitchen with step-by-step video instructions. Create shopping lists directly from recipes and discover meals based on ingredients you already have. The app includes dietary filters, cooking timers, and nutritional information. Perfect for both beginner cooks and experienced chefs.",
+    "size": 156.8,
+    "reviews": 15678,
+    "ratingAvg": 4.7,
+    "downloads": 780000,
+    "ratings": [
+      { "name": "1 star", "count": 234 },
+      { "name": "2 star", "count": 345 },
+      { "name": "3 star", "count": 1567 },
+      { "name": "4 star", "count": 5234 },
+      { "name": "5 star", "count": 8298 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/ymKHs69z/Sleep-Sounds.png",
+    "title": "Sleep Sounds",
+    "companyName": "Mindful Moments LLC",
+    "id": 105,
+    "description": "Sleep Sounds offers a vast library of calming sounds and guided sleep meditations to help you fall asleep faster and sleep deeper. Features include customizable sound mixes, smart alarm that wakes you during light sleep, and sleep tracking. The app also provides sleep stories narrated by professional voice actors and breathing exercises.",
+    "size": 32.1,
+    "reviews": 34215,
+    "ratingAvg": 4.9,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 128 },
+      { "name": "2 star", "count": 256 },
+      { "name": "3 star", "count": 987 },
+      { "name": "4 star", "count": 8567 },
+      { "name": "5 star", "count": 24277 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/DP6Jhs8q/Lang-Learn.png",
+    "title": "LangLearn",
+    "companyName": "Global Education Tech",
+    "id": 106,
+    "description": "LangLearn makes language learning fun and effective with interactive lessons and native speaker audio. Practice speaking with AI-powered conversation partners and get instant feedback on pronunciation. The app includes vocabulary games, cultural notes, and progress tracking. Learn Spanish, French, Japanese, and 20+ other languages at your own pace.",
+    "size": 189.4,
+    "reviews": 67845,
+    "ratingAvg": 4.6,
+    "downloads": 3450000,
+    "ratings": [
+      { "name": "1 star", "count": 567 },
+      { "name": "2 star", "count": 1234 },
+      { "name": "3 star", "count": 7890 },
+      { "name": "4 star", "count": 21567 },
+      { "name": "5 star", "count": 36587 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/SXR4D8DD/Plant-Care-Guide.png",
+    "title": "Plant Care Guide",
+    "companyName": "Garden Tech Innovations",
+    "id": 107,
+    "description": "Plant Care Guide helps you keep your plants thriving with personalized care reminders and plant identification. Take a photo of any plant to get detailed care instructions and diagnose problems. The app includes watering schedules, fertilizer tracking, and a community of plant lovers. Perfect for both indoor houseplants and outdoor gardens.",
+    "size": 76.3,
+    "reviews": 12345,
+    "ratingAvg": 4.4,
+    "downloads": 567000,
+    "ratings": [
+      { "name": "1 star", "count": 345 },
+      { "name": "2 star", "count": 567 },
+      { "name": "3 star", "count": 2345 },
+      { "name": "4 star", "count": 4567 },
+      { "name": "5 star", "count": 4521 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/Kj3KSXFF/Travel-Planner-Pro.png",
+    "title": "Travel Planner Pro",
+    "companyName": "Wanderlust Digital",
+    "id": 108,
+    "description": "Travel Planner Pro simplifies trip planning with itinerary creation, budget tracking, and destination guides. Get real-time flight status updates and weather forecasts for your destinations. The app offers offline maps, currency conversion, and local emergency information. Share your travel plans with friends and family for added safety.",
+    "size": 134.7,
+    "reviews": 28765,
+    "ratingAvg": 4.7,
+    "downloads": 1234000,
+    "ratings": [
+      { "name": "1 star", "count": 234 },
+      { "name": "2 star", "count": 456 },
+      { "name": "3 star", "count": 2876 },
+      { "name": "4 star", "count": 9567 },
+      { "name": "5 star", "count": 15632 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/JWmkDxHL/Photo-Editor-Plus.png",
+    "title": "Photo Editor Plus",
+    "companyName": "Creative Vision Studios",
+    "id": 109,
+    "description": "Photo Editor Plus offers professional-grade editing tools in a user-friendly mobile app. Features include advanced filters, AI-powered background removal, and collage maker with hundreds of templates. The app supports RAW file editing and offers non-destructive editing. Perfect for social media content creators and photography enthusiasts.",
+    "size": 245.6,
+    "reviews": 45678,
+    "ratingAvg": 4.5,
+    "downloads": 2780000,
+    "ratings": [
+      { "name": "1 star", "count": 678 },
+      { "name": "2 star", "count": 1234 },
+      { "name": "3 star", "count": 5678 },
+      { "name": "4 star", "count": 15678 },
+      { "name": "5 star", "count": 22410 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/nq717SMk/Mindful-Moments.png",
+    "title": "Mindful Moments",
+    "companyName": "ZenTech Solutions",
+    "id": 110,
+    "description": "Mindful Moments provides daily meditation practices and mindfulness exercises for stress reduction and mental clarity. Choose from hundreds of guided sessions ranging from 3 to 60 minutes. The app includes mood tracking, progress insights, and personalized recommendations. Suitable for beginners and experienced meditators alike.",
+    "size": 54.2,
+    "reviews": 34567,
+    "ratingAvg": 4.8,
+    "downloads": 1670000,
+    "ratings": [
+      { "name": "1 star", "count": 123 },
+      { "name": "2 star", "count": 234 },
+      { "name": "3 star", "count": 1567 },
+      { "name": "4 star", "count": 9876 },
+      { "name": "5 star", "count": 22767 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/BKgjWXf6/Weather-Radar-Pro.png",
+    "title": "Weather Radar Pro",
+    "companyName": "Climate Data Systems",
+    "id": 111,
+    "description": "Weather Radar Pro delivers hyper-local weather forecasts with stunning radar animations and severe weather alerts. Get minute-by-minute precipitation forecasts and extended 15-day outlooks. The app features customizable widgets, hurricane tracking, and ski condition reports. Essential for outdoor enthusiasts, travelers, and weather buffs.",
+    "size": 98.5,
+    "reviews": 23456,
+    "ratingAvg": 4.3,
+    "downloads": 890000,
+    "ratings": [
+      { "name": "1 star", "count": 456 },
+      { "name": "2 star", "count": 789 },
+      { "name": "3 star", "count": 3456 },
+      { "name": "4 star", "count": 8567 },
+      { "name": "5 star", "count": 10188 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/ccJGkZkG/Mobile-Music-Studio.png",
+    "title": "Mobile Music Studio",
+    "companyName": "Audio Innovations Co",
+    "id": 112,
+    "description": "Mobile Music Studio turns your device into a professional recording studio with multi-track recording and virtual instruments. Create music anywhere with built-in synthesizers, drum machines, and guitar effects. The app supports MIDI controllers and offers high-quality audio export. Perfect for musicians, podcasters, and audio creators on the go.",
+    "size": 312.8,
+    "reviews": 15673,
+    "ratingAvg": 4.6,
+    "downloads": 456000,
+    "ratings": [
+      { "name": "1 star", "count": 234 },
+      { "name": "2 star", "count": 345 },
+      { "name": "3 star", "count": 2345 },
+      { "name": "4 star", "count": 5678 },
+      { "name": "5 star", "count": 7071 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/prdgv5bj/Book-Worm-Reader.png",
+    "title": "BookWorm Reader",
+    "companyName": "Digital Pages Inc",
+    "id": 113,
+    "description": "BookWorm Reader offers a comfortable reading experience with customizable fonts, themes, and reading progress tracking. Access thousands of free classics and sync your reading position across devices. The app includes dictionary lookup, highlighting, and note-taking features. Join reading challenges and discover new books through personalized recommendations.",
+    "size": 67.9,
+    "reviews": 43210,
+    "ratingAvg": 4.7,
+    "downloads": 2340000,
+    "ratings": [
+      { "name": "1 star", "count": 321 },
+      { "name": "2 star", "count": 543 },
+      { "name": "3 star", "count": 3456 },
+      { "name": "4 star", "count": 15678 },
+      { "name": "5 star", "count": 23212 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/tPB3dzqC/Home-Workout-Coach.png",
+    "title": "Home Workout Coach",
+    "companyName": "Fitness Everywhere",
+    "id": 114,
+    "description": "Home Workout Coach provides effective exercise routines that require no equipment and minimal space. Follow along with HD video demonstrations and audio guidance. The app creates personalized workout plans based on your fitness level and goals. Track your progress, join live classes, and connect with a supportive fitness community.",
+    "size": 143.2,
+    "reviews": 56789,
+    "ratingAvg": 4.8,
+    "downloads": 1890000,
+    "ratings": [
+      { "name": "1 star", "count": 234 },
+      { "name": "2 star", "count": 456 },
+      { "name": "3 star", "count": 2345 },
+      { "name": "4 star", "count": 15678 },
+      { "name": "5 star", "count": 38076 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/VW8qv931/Splitwise-Pro.png",
+    "title": "Splitwise Pro",
+    "companyName": "Group Expense Solutions",
+    "id": 115,
+    "description": "Splitwise Pro makes splitting bills and expenses with friends incredibly easy. Track shared expenses, settle up with integrated payments, and get reminders for owed money. The app handles complex splitting scenarios and currency conversion. Perfect for roommates, travelers, and anyone who shares expenses regularly.",
+    "size": 45.6,
+    "reviews": 34521,
+    "ratingAvg": 4.9,
+    "downloads": 1560000,
+    "ratings": [
+      { "name": "1 star", "count": 89 },
+      { "name": "2 star", "count": 123 },
+      { "name": "3 star", "count": 987 },
+      { "name": "4 star", "count": 8567 },
+      { "name": "5 star", "count": 24755 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/1Yrf6WTr/Kids-Learning-World.png",
+    "title": "Kids Learning World",
+    "companyName": "Educational Fun Co",
+    "id": 116,
+    "description": "Kids Learning World offers educational games and activities for children ages 2-8. Developed with child psychologists and educators, the app covers reading, math, science, and creativity. Features include progress tracking for parents, ad-free environment, and offline access. Safe, engaging, and designed to make learning fun for young children.",
+    "size": 287.4,
+    "reviews": 23456,
+    "ratingAvg": 4.7,
+    "downloads": 678000,
+    "ratings": [
+      { "name": "1 star", "count": 123 },
+      { "name": "2 star", "count": 234 },
+      { "name": "3 star", "count": 1567 },
+      { "name": "4 star", "count": 8567 },
+      { "name": "5 star", "count": 12965 }
+    ]
+  }
+]
