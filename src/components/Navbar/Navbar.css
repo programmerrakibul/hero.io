@@ -14,5 +14,5 @@ a.nav-links.active {
 }
 
 a.nav-btn {
-  @apply btn font-semibold text-xs sm:text-base text-white bg-gradient-to-br from-[#632EE3] to-[#9F62F2];
+  @apply btn font-semibold text-xs sm:text-base text-white bg-gradient-to-br hover:bg-gradient-to-t from-[#632EE3] to-[#9F62F2];
 }

@@ -34,7 +34,7 @@ const TrendingApps = () => {
             <div className="text-center">
               <Link
                 to="apps"
-                className="btn bg-[#642ee3da] hover:bg-[#632EE3] text-white duration-300"
+                className="btn text-white bg-gradient-to-br hover:bg-gradient-to-t from-[#632EE3] to-[#9F62F2] duration-300"
               >
                 Show All
               </Link>
