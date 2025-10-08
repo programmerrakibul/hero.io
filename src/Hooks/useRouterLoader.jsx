@@ -4,7 +4,7 @@ import { useLocation } from "react-router";
 const useRouterLoader = () => {
   const { pathname } = useLocation();
   const [currentPath, setCurrentPath] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     if (currentPath !== pathname) {
