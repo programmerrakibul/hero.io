@@ -1,4 +1,3 @@
-import React from "react";
 import Container from "../Container/Container";
 
 const Stats = () => {
@@ -12,7 +11,7 @@ const Stats = () => {
           <div className="flex flex-wrap items-center justify-center gap-16">
             <div className="space-y-2.5">
               <p className="opacity-80 text-base">Total Downloads</p>
-              <p className="font-extrabold text-4xl md:text-5xl lg:text-6xl">
+              <p className="font-extrabold text-4xl md:text-5xl lg:text-6xl animate-pulse">
                 29.6M
               </p>
               <p className="opacity-80 text-base">21% more than last month</p>
@@ -20,7 +19,7 @@ const Stats = () => {
 
             <div className="space-y-2.5">
               <p className="opacity-80 text-base">Total Reviews</p>
-              <p className="font-extrabold text-4xl md:text-5xl lg:text-6xl">
+              <p className="font-extrabold text-4xl md:text-5xl lg:text-6xl animate-pulse">
                 906K
               </p>
               <p className="opacity-80 text-base">46% more than last month</p>
@@ -28,7 +27,7 @@ const Stats = () => {
 
             <div className="space-y-2.5">
               <p className="opacity-80 text-base">Active Apps</p>
-              <p className="font-extrabold text-4xl md:text-5xl lg:text-6xl">
+              <p className="font-extrabold text-4xl md:text-5xl lg:text-6xl animate-pulse">
                 132+
               </p>
               <p className="opacity-80 text-base">31 more will Launch</p>
