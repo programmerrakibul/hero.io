@@ -30,7 +30,7 @@ const TrendingApps = () => {
             to="apps"
             className="btn bg-[#642ee3da] hover:bg-[#632EE3] text-white duration-300"
           >
-            See All Apps
+            Show All
           </Link>
         </div>
       </Container>
