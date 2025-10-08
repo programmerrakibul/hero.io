@@ -44,7 +44,7 @@ const Installation = () => {
               disabled={installedApps.length === 0}
               defaultValue="Sort By Size"
               onChange={(e) => setSortOrder(e.target.value)}
-              className="select w-1/2 sm:w-auto"
+              className="select w-1/2 min-w-32 sm:w-auto"
             >
               <option disabled={true}>Sort By Size</option>
               <option value="high">High-Low</option>
