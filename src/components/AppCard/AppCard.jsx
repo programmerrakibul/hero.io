@@ -13,11 +13,15 @@ const AppCard = ({ singleApp }) => {
     <div
       className={`flex ${
         isInInstallation
-          ? "flex-row items-center hover:shadow-xl hover:shadow-primary-content"
+          ? "flex-wrap flex-row sm:items-center hover:shadow-xl hover:shadow-primary-content"
           : "flex-col hover:scale-105"
       } gap-4 bg-white p-4 rounded-md shadow-md duration-300`}
     >
-      <figure className={`${isInInstallation ? "max-w-20" : ""}`}>
+      <figure
+        className={`${
+          isInInstallation ? "max-w-20 hidden sm:inline-block" : ""
+        }`}
+      >
         <img
           src={image}
           alt={title}
@@ -54,7 +58,7 @@ const AppCard = ({ singleApp }) => {
             <span>{ratingAvg}</span>
           </p>
           {isInInstallation && (
-            <p className="text-[#627382] text-base">{size} MB</p>
+            <p className="text-[#627382] text-base text-nowrap">{size} MB</p>
           )}
         </div>
       </div>
@@ -62,7 +66,7 @@ const AppCard = ({ singleApp }) => {
       {isInInstallation && (
         <button
           onClick={() => handleUninstallApp("apps", id)}
-          className="btn btn-success text-white text-base font-semibold"
+          className="btn btn-success text-white text-base font-semibold w-fit"
         >
           Uninstall
         </button>

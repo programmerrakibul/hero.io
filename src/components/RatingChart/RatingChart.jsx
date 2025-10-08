@@ -11,7 +11,7 @@ import {
 
 const RatingChart = ({ ratings }) => {
   return (
-    <div className="h-80 my-10 capitalize">
+    <div className="h-64 sm:h-80 my-10 capitalize text-sm sm:text-base">
       <ResponsiveContainer width="100%" height="100%">
         <BarChart
           margin={16}

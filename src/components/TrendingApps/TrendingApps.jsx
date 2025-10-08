@@ -16,8 +16,10 @@ const TrendingApps = () => {
     <section className="my-8 py-4">
       <Container>
         <div className="text-center space-y-3.5">
-          <h1 className="text-5xl font-bold">Trending Apps</h1>
-          <p className="text-[#627382] text-xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
+            Trending Apps
+          </h1>
+          <p className="text-[#627382]  text-base sm:text-xl">
             Explore All Trending Apps on the Market developed by us
           </p>
         </div>

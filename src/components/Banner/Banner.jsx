@@ -10,16 +10,16 @@ const Banner = () => {
       <Container>
         <div className="flex flex-col justify-center items-center gap-10">
           <div className="space-y-3.5 text-center">
-            <h1 className="font-black text-7xl">
-              We Build <br /> <span className="text-[#632EE3]">Productive</span>{" "}
-              Apps
+            <h1 className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-7xl">
+              We Build <br className="hidden sm:block" />{" "}
+              <span className="text-[#632EE3]">Productive</span> Apps
             </h1>
             <p className="max-w-3xl mx-auto text-[#627382]">
               At HERO.IO, we design web applications that blend creativity with
               functionality—making your digital life smoother, smarter, and more
               delightful.
             </p>
-            <div className="space-x-3.5">
+            <div className="flex flex-wrap justify-center items-center gap-3.5">
               <Link
                 to="https://play.google.com/store/games?device=phone"
                 className="btn font-semibold text-xl"

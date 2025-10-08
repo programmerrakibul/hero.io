@@ -17,8 +17,10 @@ const Error = () => {
               <img src={ErrorImg} alt="404" />
             </div>
             <div className="text-center space-y-4">
-              <h1 className="text-5xl font-semibold">Oops, page not found!</h1>
-              <p className="text-[#627382]">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">
+                Oops, page not found!
+              </h1>
+              <p className="text-[#627382] text-sm sm:text-base">
                 The page you are looking for is not available.
               </p>
               <button

@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router";
 import Container from "../Container/Container";
 import logo from "../../assets/logo.png";
 import "./Navbar.css";
-import { Github } from "lucide-react";
+import { Github, TextAlignJustify } from "lucide-react";
 
 const Navbar = () => {
   const navItems = ["Home", "Apps", "Installation"];
@@ -20,28 +20,14 @@ const Navbar = () => {
     <nav className="bg-white border-b border-[#E9E9E9]">
       <Container>
         <div className="navbar p-0">
-          <div className="navbar-start">
+          <div className="navbar-start gap-1">
             <div className="dropdown">
               <div
                 tabIndex={0}
                 role="button"
-                className="btn btn-ghost lg:hidden"
+                className="btn bg-transparent shadow-none border-none p-1 sm:hidden"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  {" "}
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />{" "}
-                </svg>
+                <TextAlignJustify size={18} />
               </div>
               <ul
                 tabIndex={0}
@@ -50,17 +36,26 @@ const Navbar = () => {
                 {navLinks}
               </ul>
             </div>
-            <Link to=".." className="flex items-center justify-center gap-1.5">
-              <img src={logo} alt="Logo" className="size-10" />
-              <span className="text-[#632EE3] font-bold">HERO.IO</span>
+            <Link
+              to=".."
+              className="flex items-center justify-center gap-0.5 sm:gap-1.5"
+            >
+              <img src={logo} alt="Logo" className="size-7 sm:size-10" />
+              <span className="text-[#632EE3] text-base sm:text-lg font-bold">
+                HERO.IO
+              </span>
             </Link>
           </div>
-          <div className="navbar-center hidden lg:flex">
+          <div className="navbar-center hidden sm:flex">
             <ul className="menu menu-horizontal px-1">{navLinks}</ul>
           </div>
           <div className="navbar-end">
             <Link to="https://github.com/programmerrakibul" className="nav-btn">
-              <Github fill="#632EE3" size={20} className="bg-white rounded-full" />
+              <Github
+                fill="#632EE3"
+                size={20}
+                className="bg-white rounded-full"
+              />
               <span>Contribute</span>
             </Link>
           </div>

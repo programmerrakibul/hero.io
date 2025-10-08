@@ -28,7 +28,7 @@ const AppDetails = () => {
       <Container>
         <div className="space-y-7">
           <div className="flex flex-col md:flex-row gap-7">
-            <figure className="max-w-[350px] rounded-lg overflow-hidden">
+            <figure className="w-full md:max-w-[350px] rounded-lg overflow-hidden">
               <img
                 src={image}
                 alt={title}
@@ -47,7 +47,7 @@ const AppDetails = () => {
 
               <hr className="text-[#00193120]" />
 
-              <div className="flex items-center gap-16">
+              <div className="flex flex-wrap sm:flex-nowrap items-center gap-16">
                 <div className="flex flex-col gap-2">
                   <span>
                     <Download size={40} color="#00827A" />

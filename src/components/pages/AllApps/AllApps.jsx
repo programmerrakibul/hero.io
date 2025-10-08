@@ -27,18 +27,20 @@ const AllApps = () => {
     <section className="my-8 py-4">
       <Container>
         <div className="text-center space-y-3.5">
-          <h1 className="text-5xl font-bold">Our All Applications</h1>
-          <p className="text-[#627382] text-xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
+            Our All Applications
+          </h1>
+          <p className="text-[#627382] text-base sm:text-xl">
             Explore All Apps on the Market developed by us. We code for Millions
           </p>
         </div>
 
         <div className="my-10 space-y-7">
-          <div className="flex justify-between items-center">
-            <h3 className="text-2xl font-semibold">
+          <div className="flex justify-between items-center gap-1.5">
+            <h3 className="text-lg sm:text-2xl font-semibold w-1/2 sm:w-auto">
               ({displayApps.length}) App Found
             </h3>
-            <label className="input text-[#627382] outline-[#627382]">
+            <label className="input text-[#627382] outline-[#627382] w-1/2 sm:w-auto">
               <Search size={20} />
               <input
                 disabled={appData.length === 0}
