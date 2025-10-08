@@ -10,6 +10,7 @@ import Spinner from "../../Spinner/Spinner";
 const AllApps = () => {
   const [searchValue, setSearchValue] = useState("");
   const { appData, loading } = useAppsData();
+
   const processedSearch = searchValue.trim().toLowerCase();
   const displayApps = searchValue
     ? appData.filter((item) =>
