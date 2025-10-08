@@ -4,6 +4,7 @@ import AppCard from "../../AppCard/AppCard";
 import Container from "../../Container/Container";
 import { useState } from "react";
 import { Link } from "react-router";
+import AppNotFound from "../../AppNotFound/AppNotFound";
 
 const AllApps = () => {
   const [searchValue, setSearchValue] = useState("");
@@ -38,6 +39,7 @@ const AllApps = () => {
             <label className="input text-[#627382] outline-[#627382]">
               <Search size={20} />
               <input
+                disabled={appData.length === 0}
                 value={searchValue}
                 onChange={(e) => setSearchValue(e.target.value)}
                 type="search"
@@ -45,9 +47,13 @@ const AllApps = () => {
               />
             </label>
           </div>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {singleAppElements}
-          </div>
+          {displayApps.length > 0 ? (
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              {singleAppElements}
+            </div>
+          ) : (
+            <AppNotFound />
+          )}
         </div>
       </Container>
     </section>
