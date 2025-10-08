@@ -14,20 +14,19 @@ const AllApps = () => {
   const [searchLoading, setSearchLoading] = useState(false);
 
   const handleChange = (e) => {
-    const value = e.target.value.trim().toLowerCase();
-    setSearchValue(value);
+    setSearchValue(e.target.value);
     setSearchLoading(true);
   };
 
   useEffect(() => {
     setDisplayApps(appData);
+    const value = searchValue.trim().toLowerCase();
 
     const timerId = setTimeout(() => {
-      const filteredApps = searchValue
-        ? appData.filter((item) =>
-            item.title.toLowerCase().includes(searchValue)
-          )
+      const filteredApps = value
+        ? appData.filter((item) => item.title.toLowerCase().includes(value))
         : appData;
+
       setSearchLoading(false);
       setDisplayApps(filteredApps);
     }, 300);
