@@ -61,10 +61,10 @@ const Installation = () => {
               </div>
 
               <div className="text-center space-y-4">
-                <h1 className="text-5xl font-semibold">
+                <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">
                   No applications are installed.
-                </h1>
-                <p className="text-[#627382] max-w-3xl mx-auto">
+                </h3>
+                <p className="text-[#627382] text-sm sm:text-base">
                   Currently, there are no applications installed on your device.
                   To begin using applications, please click on the "see all
                   apps" button, which will take you to a screen where you can
@@ -73,7 +73,7 @@ const Installation = () => {
                 </p>
                 <button
                   onClick={() => navigate("/apps")}
-                  className="btn font-semibold text-white bg-gradient-to-br from-[#632EE3] to-[#9F62F2]"
+                  className="btn font-semibold text-white bg-gradient-to-br hover:bg-gradient-to-t from-[#632EE3] to-[#9F62F2]"
                 >
                   See All Apps
                 </button>
