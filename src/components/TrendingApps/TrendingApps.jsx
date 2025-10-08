@@ -5,9 +5,11 @@ import Container from "../Container/Container";
 
 const TrendingApps = () => {
   const { appData } = useAppsData();
-  const singleAppElements = appData
-    .slice(0, 8)
-    .map((item) => <AppCard key={item.id} singleApp={item} />);
+  const singleAppElements = appData.slice(0, 8).map((item) => (
+    <Link key={item.id} to={`app-details/${item.id}`} state={item}>
+      <AppCard singleApp={item} />
+    </Link>
+  ));
 
   return (
     <section className="my-8 py-4">
@@ -19,7 +21,9 @@ const TrendingApps = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-4 gap-6 my-10">{singleAppElements}</div>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-10">
+          {singleAppElements}
+        </div>
 
         <div className="text-center">
           <Link

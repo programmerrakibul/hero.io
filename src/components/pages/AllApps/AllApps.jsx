@@ -1,11 +1,23 @@
+import { Search } from "lucide-react";
 import useAppsData from "../../../Hooks/useAppsData";
 import AppCard from "../../AppCard/AppCard";
 import Container from "../../Container/Container";
+import { useState } from "react";
+import { Link } from "react-router";
 
 const AllApps = () => {
+  const [searchValue, setSearchValue] = useState("");
   const { appData } = useAppsData();
-  const singleAppElements = appData.map((item) => (
-    <AppCard key={item.id} singleApp={item} />
+  const processedSearch = searchValue.trim().toLowerCase();
+  const displayApps = searchValue
+    ? appData.filter((item) =>
+        item.title.toLowerCase().includes(processedSearch)
+      )
+    : appData;
+  const singleAppElements = displayApps.map((item) => (
+    <Link key={item.id} to={`/app-details/${item.id}`} state={item}>
+      <AppCard singleApp={item} />
+    </Link>
   ));
 
   return (
@@ -18,7 +30,25 @@ const AllApps = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-4 gap-6 my-10">{singleAppElements}</div>
+        <div className="my-10 space-y-7">
+          <div className="flex justify-between items-center">
+            <h3 className="text-2xl font-semibold">
+              ({displayApps.length}) App Found
+            </h3>
+            <label className="input text-[#627382] outline-[#627382]">
+              <Search size={20} />
+              <input
+                value={searchValue}
+                onChange={(e) => setSearchValue(e.target.value)}
+                type="search"
+                placeholder="Search Apps"
+              />
+            </label>
+          </div>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {singleAppElements}
+          </div>
+        </div>
       </Container>
     </section>
   );
