@@ -2,9 +2,10 @@ import { Link } from "react-router";
 import useAppsData from "../../Hooks/useAppsData";
 import AppCard from "../AppCard/AppCard";
 import Container from "../Container/Container";
+import Spinner from "../Spinner/Spinner";
 
 const TrendingApps = () => {
-  const { appData } = useAppsData();
+  const { appData, loading } = useAppsData();
   const singleAppElements = appData.slice(0, 8).map((item) => (
     <Link key={item.id} to={`app-details/${item.id}`} state={item}>
       <AppCard singleApp={item} />
@@ -21,18 +22,23 @@ const TrendingApps = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-10">
-          {singleAppElements}
-        </div>
-
-        <div className="text-center">
-          <Link
-            to="apps"
-            className="btn bg-[#642ee3da] hover:bg-[#632EE3] text-white duration-300"
-          >
-            Show All
-          </Link>
-        </div>
+        {loading ? (
+          <Spinner />
+        ) : (
+          <>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-10">
+              {singleAppElements}
+            </div>
+            <div className="text-center">
+              <Link
+                to="apps"
+                className="btn bg-[#642ee3da] hover:bg-[#632EE3] text-white duration-300"
+              >
+                Show All
+              </Link>
+            </div>
+          </>
+        )}
       </Container>
     </section>
   );

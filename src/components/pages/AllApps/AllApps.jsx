@@ -5,16 +5,18 @@ import Container from "../../Container/Container";
 import { useState } from "react";
 import { Link } from "react-router";
 import AppNotFound from "../../AppNotFound/AppNotFound";
+import Spinner from "../../Spinner/Spinner";
 
 const AllApps = () => {
   const [searchValue, setSearchValue] = useState("");
-  const { appData } = useAppsData();
+  const { appData, loading } = useAppsData();
   const processedSearch = searchValue.trim().toLowerCase();
   const displayApps = searchValue
     ? appData.filter((item) =>
         item.title.toLowerCase().includes(processedSearch)
       )
     : appData;
+
   const singleAppElements = displayApps.map((item) => (
     <Link key={item.id} to={`/app-details/${item.id}`} state={item}>
       <AppCard singleApp={item} />
@@ -47,7 +49,9 @@ const AllApps = () => {
               />
             </label>
           </div>
-          {displayApps.length > 0 ? (
+          {loading ? (
+            <Spinner />
+          ) : displayApps.length > 0 ? (
             <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               {singleAppElements}
             </div>
