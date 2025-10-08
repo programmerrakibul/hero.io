@@ -2,7 +2,7 @@ import { Search } from "lucide-react";
 import useAppsData from "../../../Hooks/useAppsData";
 import AppCard from "../../AppCard/AppCard";
 import Container from "../../Container/Container";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router";
 import AppNotFound from "../../AppNotFound/AppNotFound";
 import Spinner from "../../Spinner/Spinner";
@@ -10,13 +10,30 @@ import Spinner from "../../Spinner/Spinner";
 const AllApps = () => {
   const [searchValue, setSearchValue] = useState("");
   const { appData, loading } = useAppsData();
+  const [displayApps, setDisplayApps] = useState([]);
+  const [searchLoading, setSearchLoading] = useState(false);
 
-  const processedSearch = searchValue.trim().toLowerCase();
-  const displayApps = searchValue
-    ? appData.filter((item) =>
-        item.title.toLowerCase().includes(processedSearch)
-      )
-    : appData;
+  const handleChange = (e) => {
+    const value = e.target.value.trim().toLowerCase();
+    setSearchValue(value);
+    setSearchLoading(true);
+  };
+
+  useEffect(() => {
+    setDisplayApps(appData);
+
+    const timerId = setTimeout(() => {
+      const filteredApps = searchValue
+        ? appData.filter((item) =>
+            item.title.toLowerCase().includes(searchValue)
+          )
+        : appData;
+      setSearchLoading(false);
+      setDisplayApps(filteredApps);
+    }, 300);
+
+    return () => clearTimeout(timerId);
+  }, [searchValue, appData]);
 
   const singleAppElements = displayApps.map((item) => (
     <Link key={item.id} to={`/app-details/${item.id}`} state={item}>
@@ -46,15 +63,15 @@ const AllApps = () => {
               <input
                 disabled={appData.length === 0}
                 value={searchValue}
-                onChange={(e) => setSearchValue(e.target.value)}
+                onChange={handleChange}
                 type="search"
                 placeholder="Search Apps"
               />
             </label>
           </div>
-          {loading ? (
+          {loading || searchLoading ? (
             <Spinner />
-          ) : displayApps.length > 0 ? (
+          ) : displayApps.length > 0 && appData.length > 0 ? (
             <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               {singleAppElements}
             </div>
