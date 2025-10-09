@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router";
 import AppNotFound from "../../AppNotFound/AppNotFound";
 import Spinner from "../../Spinner/Spinner";
+import { ClipLoader } from "react-spinners";
 
 const AllApps = () => {
   const [searchValue, setSearchValue] = useState("");
@@ -13,15 +14,11 @@ const AllApps = () => {
   const [displayApps, setDisplayApps] = useState([]);
   const [searchLoading, setSearchLoading] = useState(false);
 
-  const handleChange = (e) => {
-    setSearchValue(e.target.value);
-    setSearchLoading(true);
-  };
-
   useEffect(() => {
+    setSearchLoading(true);
     setDisplayApps(appData);
-    const value = searchValue.trim().toLowerCase();
 
+    const value = searchValue.trim().toLowerCase();
     const timerId = setTimeout(() => {
       const filteredApps = value
         ? appData.filter((item) => item.title.toLowerCase().includes(value))
@@ -55,14 +52,20 @@ const AllApps = () => {
         <div className="my-10 space-y-7">
           <div className="flex justify-between items-center gap-1.5">
             <h3 className="text-lg sm:text-2xl font-semibold w-1/2 sm:w-auto">
-              ({displayApps.length}) App Found
+              (
+              {loading || searchLoading ? (
+                <ClipLoader size={18} color="#632EE3" />
+              ) : (
+                displayApps.length
+              )}
+              ) App Found
             </h3>
             <label className="input text-[#627382] outline-[#627382] w-1/2 sm:w-auto">
               <Search size={20} />
               <input
                 disabled={appData.length === 0}
                 value={searchValue}
-                onChange={handleChange}
+                onChange={(e) => setSearchValue(e.target.value)}
                 type="search"
                 placeholder="Search Apps"
               />
