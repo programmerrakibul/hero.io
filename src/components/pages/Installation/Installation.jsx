@@ -12,7 +12,7 @@ const Installation = () => {
   const displayApps = sortOrder
     ? installedApps.sort((a, b) => {
         if (sortOrder === "high") {
-          return b.size - a.size;
+          return b.downloads - a.downloads;
         } else if (sortOrder === "low") {
           return a.size - b.size;
         }
