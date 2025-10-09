@@ -6,7 +6,7 @@ a.nav-links {
 }
 
 a.nav-links:hover {
-  @apply text-[#632EE3] underline;
+  @apply underline font-medium text-[#632EE3];
 }
 
 a.nav-links.active {
