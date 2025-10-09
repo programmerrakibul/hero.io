@@ -64,7 +64,7 @@ const Installation = () => {
                 <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">
                   No applications are installed.
                 </h3>
-                <p className="text-[#627382] text-sm sm:text-base">
+                <p className="text-[#627382] text-sm sm:text-base max-w-3xl mx-auto">
                   Currently, there are no applications installed on your device.
                   To begin using applications, please click on the "see all
                   apps" button, which will take you to a screen where you can
