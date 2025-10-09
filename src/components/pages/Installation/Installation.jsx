@@ -42,11 +42,11 @@ const Installation = () => {
             </h3>
             <select
               disabled={installedApps.length === 0}
-              defaultValue="Sort By Size"
+              defaultValue="Sort By Downloads"
               onChange={(e) => setSortOrder(e.target.value)}
-              className="select w-1/2 min-w-32 sm:w-auto"
+              className="select w-1/2 min-w-32 sm:w-auto text-sm sm:text-base"
             >
-              <option disabled={true}>Sort By Size</option>
+              <option disabled={true}>Sort By Downloads</option>
               <option value="high">High-Low</option>
               <option value="low">Low-High</option>
             </select>
