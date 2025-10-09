@@ -75,7 +75,7 @@ const Installation = () => {
                   onClick={() => navigate("/apps")}
                   className="btn font-semibold text-white bg-gradient-to-br hover:bg-gradient-to-t from-[#632EE3] to-[#9F62F2]"
                 >
-                  See All Apps
+                  Browse Apps
                 </button>
               </div>
             </div>
