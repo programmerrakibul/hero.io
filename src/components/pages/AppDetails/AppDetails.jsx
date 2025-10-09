@@ -5,12 +5,17 @@ import likeIcon from "../../../assets/icon-review.png";
 import RatingChart from "../../RatingChart/RatingChart";
 import { useContext } from "react";
 import AppContext from "../../../Contexts/AppContext";
+import AppNotFound from "../../AppNotFound/AppNotFound";
 
 const AppDetails = () => {
-  const { state: singleApp } = useLocation();
   const { handleInstallApp, installedApps } = useContext(AppContext);
-  const isInstalled = installedApps.some((item) => item.id === singleApp.id);
+  const { state: singleApp } = useLocation();
 
+  if (singleApp === null) {
+    return <AppNotFound />;
+  }
+
+  const isInstalled = installedApps.some((item) => item.id === singleApp.id);
   const {
     image,
     title,
