@@ -11,12 +11,11 @@ import { ClipLoader } from "react-spinners";
 const AllApps = () => {
   const [searchValue, setSearchValue] = useState("");
   const { appData, loading } = useAppsData();
-  const [displayApps, setDisplayApps] = useState([]);
+  const [displayApps, setDisplayApps] = useState(appData);
   const [searchLoading, setSearchLoading] = useState(false);
 
   useEffect(() => {
     setSearchLoading(true);
-    setDisplayApps(appData);
 
     const value = searchValue.trim().toLowerCase();
     const timerId = setTimeout(() => {
