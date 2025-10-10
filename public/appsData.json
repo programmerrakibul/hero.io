@@ -286,5 +286,77 @@
       { "name": "4 star", "count": 8567 },
       { "name": "5 star", "count": 12965 }
     ]
+  },
+  {
+    "image": "https://i.ibb.co/YTppj66z/Code-Companion.jpg",
+    "title": "Code Companion",
+    "companyName": "DevTools Technologies",
+    "id": 117,
+    "description": "Code Companion is the ultimate mobile coding assistant for developers on the go. Features include syntax highlighting for 50+ programming languages, code compilation in the cloud, and real-time collaboration. The app offers GitHub integration, code snippets library, and debugging tools. Perfect for learning new languages, quick code reviews, or emergency fixes when away from your desk. Our AI-powered code completion suggests optimal solutions while the interactive tutorials help you master new frameworks and technologies. The terminal emulator provides SSH access to remote servers, and the database browser allows you to query and manage databases directly from your mobile device. Regular coding challenges and hackathons keep your skills sharp, and the developer community forum provides instant help and code reviews from peers around the world.",
+    "size": 89.6,
+    "reviews": 43,
+    "ratingAvg": 4.5,
+    "downloads": 16,
+    "ratings": [
+      { "name": "1 star", "count": 167 },
+      { "name": "2 star", "count": 289 },
+      { "name": "3 star", "count": 1456 },
+      { "name": "4 star", "count": 4234 },
+      { "name": "5 star", "count": 5678 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/xK4t6FBN/Star-Gazer.jpg",
+    "title": "Star Gazer",
+    "companyName": "Cosmic Explorations Ltd",
+    "id": 118,
+    "description": "Star Gazer transforms your device into a personal planetarium with augmented reality star mapping. Simply point your camera at the sky to identify stars, planets, constellations, and satellites in real-time. The app includes meteor shower alerts, eclipse tracking, and space news updates. Perfect for astronomy enthusiasts, educators, and romantic stargazers. Our extensive database contains over 1.5 million celestial objects with detailed information and mythology stories. The night mode preserves your dark adaptation with red lighting, while the time travel feature lets you see how the sky looked in the past or will look in the future. Join live virtual telescope sessions and participate in citizen science projects like asteroid tracking and exoplanet discovery. The social features allow you to share your astronomical observations and join local stargazing groups for real-world observing sessions.",
+    "size": 234.1,
+    "reviews": 32,
+    "ratingAvg": 4.8,
+    "downloads": 7,
+    "ratings": [
+      { "name": "1 star", "count": 89 },
+      { "name": "2 star", "count": 134 },
+      { "name": "3 star", "count": 567 },
+      { "name": "4 star", "count": 2345 },
+      { "name": "5 star", "count": 8123 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/S7ZW3cCB/Pet-Care-Assistant.jpg",
+    "title": "Pet Care Assistant",
+    "companyName": "Animal Wellness Tech",
+    "id": 119,
+    "description": "Pet Care Assistant helps you provide the best care for your furry friends with vaccination reminders, health tracking, and vet appointment scheduling. The app includes symptom checker, medication tracker, and emergency first aid guides. Connect with licensed veterinarians for virtual consultations and get personalized advice for your pet's specific needs. Our behavior training section offers step-by-step guides for common issues, while the nutrition planner helps you create balanced meals based on your pet's age, breed, and health conditions. The lost pet alert system quickly notifies local shelters and community members if your pet goes missing. Track your pet's growth, weight, and activity levels with our integrated charts and receive alerts for potential health issues. The social features let you share adorable photos, join breed-specific communities, and find pet-friendly places in your area.",
+    "size": 76.8,
+    "reviews": 58,
+    "ratingAvg": 4.6,
+    "downloads": 13,
+    "ratings": [
+      { "name": "1 star", "count": 234 },
+      { "name": "2 star", "count": 345 },
+      { "name": "3 star", "count": 1234 },
+      { "name": "4 star", "count": 4567 },
+      { "name": "5 star", "count": 7890 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/8gWtnpcj/DIY-Home-Pro.jpg",
+    "title": "DIY Home Pro",
+    "companyName": "Home Improvement Labs",
+    "id": 120,
+    "description": "DIY Home Pro empowers homeowners with step-by-step guides for home improvement projects, repair tutorials, and maintenance schedules. Use augmented reality to visualize furniture in your space before buying and get accurate measurements with your camera. The app includes cost calculators, material lists, and professional tips for every skill level. Our extensive video library covers everything from basic plumbing repairs to advanced woodworking projects. The project planner helps you break down complex renovations into manageable steps with realistic timelines. Connect with local professionals for consultations or hire help for specific tasks through our verified contractor network. The inspiration gallery features thousands of completed projects with detailed breakdowns of materials and costs. The safety section ensures you understand proper tool usage and protective equipment for each project, making home improvement accessible and safe for everyone.",
+    "size": 187.3,
+    "reviews": 41,
+    "ratingAvg": 4.4,
+    "downloads": 11,
+    "ratings": [
+      { "name": "1 star", "count": 345 },
+      { "name": "2 star", "count": 567 },
+      { "name": "3 star", "count": 2345 },
+      { "name": "4 star", "count": 5678 },
+      { "name": "5 star", "count": 6789 }
+    ]
   }
 ]
