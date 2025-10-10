@@ -88,7 +88,12 @@ const AppDetails = () => {
             </div>
           </div>
 
-          <RatingChart ratings={ratings} />
+          <hr className="text-[#00193120]" />
+
+          <div className=" space-y-3.5">
+            <h4 className="text-2xl font-semibold">Ratings</h4>
+            <RatingChart ratings={ratings} />
+          </div>
 
           <hr className="text-[#00193120]" />
 
