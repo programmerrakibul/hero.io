@@ -18,7 +18,7 @@ const RatingChart = ({ ratings }) => {
       } = payload[0];
 
       return (
-        <p className="backdrop-blur-2xl bg-gradient-to-tl from-[#642ee3a5] to-[#9e62f251] p-3 rounded-lg w-48 sm:w-auto">
+        <p className="capitalize backdrop-blur-2xl bg-gradient-to-tl from-[#642ee3a5] to-[#9e62f251] p-3 rounded-lg w-48 sm:w-auto">
           {count} users rated this app {name} ⭐
         </p>
       );
@@ -26,7 +26,7 @@ const RatingChart = ({ ratings }) => {
   };
 
   return (
-    <div className="h-64 sm:h-80 capitalize text-sm sm:text-base">
+    <div className="h-64 sm:h-80 text-sm sm:text-base">
       <ResponsiveContainer width="100%" height="100%">
         <ComposedChart
           margin={16}

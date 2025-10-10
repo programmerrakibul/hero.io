@@ -37,7 +37,7 @@ const Installation = () => {
         <div className="my-10 space-y-7">
           <div className="flex justify-between items-center gap-1.5">
             <h3 className="text-lg sm:text-2xl font-semibold w-1/2 sm:w-auto">
-              ({installedApps.length}) App Found
+              ({installedApps.length}) Apps Found
             </h3>
             <select
               disabled={installedApps.length === 0}

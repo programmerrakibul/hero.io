@@ -58,7 +58,7 @@ const AllApps = () => {
               ) : (
                 displayApps.length
               )}
-              ) App Found
+              ) Apps Found
             </h3>
             <label className="input text-[#627382] outline-[#627382] w-1/2 sm:w-auto">
               <Search size={20} />

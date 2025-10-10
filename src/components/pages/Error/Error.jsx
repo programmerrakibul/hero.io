@@ -8,7 +8,7 @@ const Error = () => {
   return (
     <>
       <Navbar />
-      <section className="min-h-[calc(100dvh-100px)] flex justify-center items-center my-8 py-4">
+      <section className="flex justify-center items-center my-8 py-4">
         <Container>
           <div className="flex flex-col justify-center  items-center gap-10">
             <div>
