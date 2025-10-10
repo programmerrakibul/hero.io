@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router";
 import AppNotFound from "../../AppNotFound/AppNotFound";
 import Spinner from "../../Spinner/Spinner";
-import { ClipLoader } from "react-spinners";
 
 const AllApps = () => {
   const [searchValue, setSearchValue] = useState("");
@@ -53,7 +52,7 @@ const AllApps = () => {
             <h3 className="text-lg sm:text-2xl font-semibold w-1/2 sm:w-auto">
               (
               {loading || searchLoading ? (
-                <ClipLoader size={18} color="#632EE3" />
+                <span className="loading loading-spinner text-[#632EE3] size-4 md:size-5"></span>
               ) : (
                 displayApps.length
               )}
