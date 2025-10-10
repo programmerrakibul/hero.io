@@ -90,6 +90,8 @@ const AppDetails = () => {
 
           <RatingChart ratings={ratings} />
 
+          <hr className="text-[#00193120]" />
+
           <div className="space-y-3.5">
             <h4 className="text-2xl font-semibold">Description</h4>
             <p className="text-[#627382]">{description}</p>

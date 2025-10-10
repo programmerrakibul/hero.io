@@ -1,8 +1,8 @@
 import { Star } from "lucide-react";
 import {
   Bar,
-  BarChart,
   CartesianGrid,
+  ComposedChart,
   Legend,
   ResponsiveContainer,
   Tooltip,
@@ -38,7 +38,7 @@ const RatingChart = ({ ratings }) => {
   return (
     <div className="h-64 sm:h-80 my-10 capitalize text-sm sm:text-base">
       <ResponsiveContainer width="100%" height="100%">
-        <BarChart
+        <ComposedChart
           margin={16}
           reverseStackOrder={true}
           layout="vertical"
@@ -46,10 +46,16 @@ const RatingChart = ({ ratings }) => {
         >
           <CartesianGrid stroke="transparent" />
           <Tooltip content={<CustomTooltip />} />
-          <XAxis type="number" />
-          <YAxis dataKey="name" type="category" reversed />
+          <XAxis type="number" axisLine={false} tickLine={false} />
+          <YAxis
+            dataKey="name"
+            type="category"
+            reversed
+            axisLine={false}
+            tickLine={false}
+          />
           <Bar fill="#FF8811" dataKey="count" />
-        </BarChart>
+        </ComposedChart>
       </ResponsiveContainer>
     </div>
   );
