@@ -12,14 +12,16 @@ const AllApps = () => {
   const { appData, loading } = useAppsData();
   const [displayApps, setDisplayApps] = useState(appData);
   const [searchLoading, setSearchLoading] = useState(false);
+  const processedSearch = searchValue.trim().toLowerCase();
 
   useEffect(() => {
     setSearchLoading(true);
 
-    const value = searchValue.trim().toLowerCase();
     const timerId = setTimeout(() => {
-      const filteredApps = value
-        ? appData.filter((item) => item.title.toLowerCase().includes(value))
+      const filteredApps = processedSearch
+        ? appData.filter((item) =>
+            item.title.toLowerCase().includes(processedSearch)
+          )
         : appData;
 
       setSearchLoading(false);
@@ -27,7 +29,7 @@ const AllApps = () => {
     }, 300);
 
     return () => clearTimeout(timerId);
-  }, [searchValue, appData]);
+  }, [processedSearch, appData]);
 
   const singleAppElements = displayApps.map((item) => (
     <Link key={item.id} to={`/app-details/${item.id}`} state={item}>
