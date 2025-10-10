@@ -12,7 +12,10 @@ const Banner = () => {
           <div className="space-y-3.5 text-center">
             <h1 className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-7xl">
               We Build <br className="hidden sm:block" />{" "}
-              <span className="text-[#632EE3]">Productive</span> Apps
+              <span className="bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
+                Productive
+              </span>{" "}
+              Apps
             </h1>
             <p className="max-w-3xl mx-auto text-[#627382]">
               At HERO.IO, we design web applications that blend creativity with
