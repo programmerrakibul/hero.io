@@ -18,19 +18,9 @@ const RatingChart = ({ ratings }) => {
       } = payload[0];
 
       return (
-        <div className="backdrop-blur-2xl bg-gradient-to-tl from-[#642ee3a5] to-[#9e62f251] p-3 rounded-lg w-48 sm:w-auto">
-          <p className="flex items-center justify-center gap-1.5">
-            <span>
-              {count} users rated this app {name}
-            </span>
-            <Star
-              className="inline-block animate-pulse"
-              size={16}
-              fill="#FF8811"
-              color="#FF8811"
-            />
-          </p>
-        </div>
+        <p className="backdrop-blur-2xl bg-gradient-to-tl from-[#642ee3a5] to-[#9e62f251] p-3 rounded-lg w-48 sm:w-auto">
+          {count} users rated this app {name} ⭐
+        </p>
       );
     }
   };
