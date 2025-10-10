@@ -45,7 +45,7 @@ const AppDetails = () => {
               <h3 className="text-3xl font-bold">{title}</h3>
               <p className="text-[#627382] text-lg">
                 Developed by{" "}
-                <span className="bg-gradient-to-b from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent font-semibold">
+                <span className="bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent font-semibold">
                   {companyName}
                 </span>
               </p>

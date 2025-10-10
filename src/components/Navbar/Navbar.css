@@ -2,15 +2,17 @@
 @plugin "daisyui";
 
 a.nav-links {
-  @apply font-medium text-base opacity-90 bg-transparent duration-300;
+  @apply font-medium text-base opacity-90 bg-transparent duration-300 relative py-0.5;
 }
 
-a.nav-links:hover {
-  @apply underline font-medium text-[#632EE3];
-}
-
+a.nav-links:hover,
 a.nav-links.active {
-  @apply text-[#632EE3] underline font-semibold;
+  @apply font-medium bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent;
+}
+
+a.nav-links:hover::after,
+a.nav-links.active::after {
+  @apply absolute bottom-0 left-[50%] -translate-x-[50%] content-[''] w-4/5 mx-auto h-[2px] bg-gradient-to-tr from-[#632EE3] to-[#9F62F2];
 }
 
 a.nav-btn {

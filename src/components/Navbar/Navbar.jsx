@@ -42,7 +42,7 @@ const Navbar = () => {
               className="flex items-center justify-center gap-0.5 sm:gap-1.5"
             >
               <img src={logo} alt="Logo" className="size-7 sm:size-10" />
-              <span className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent text-base sm:text-lg font-bold">
+              <span className="bg-gradient-to-tr from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent text-base sm:text-lg font-bold">
                 HERO.IO
               </span>
             </Link>
