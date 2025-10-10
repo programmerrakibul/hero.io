@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router";
 import Container from "../Container/Container";
 import logo from "../../assets/logo.png";
 import "./Navbar.css";
-import { Github, TextAlignJustify } from "lucide-react";
+import { Github } from "lucide-react";
 import Button from "../Button/Button";
 
 const Navbar = () => {
@@ -23,21 +23,6 @@ const Navbar = () => {
       <Container>
         <div className="navbar p-0">
           <div className="navbar-start gap-1">
-            <div className="dropdown">
-              <div
-                tabIndex={0}
-                role="button"
-                className="btn bg-transparent shadow-none border-none p-1 sm:hidden"
-              >
-                <TextAlignJustify size={18} />
-              </div>
-              <ul
-                tabIndex={0}
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
-              >
-                {navLinks}
-              </ul>
-            </div>
             <Link
               to=".."
               className="flex items-center justify-center gap-0.5 sm:gap-1.5"
@@ -48,9 +33,13 @@ const Navbar = () => {
               </span>
             </Link>
           </div>
-          <div className="navbar-center hidden sm:flex">
-            <ul className="menu menu-horizontal px-1">{navLinks}</ul>
+
+          <div className="navbar-center fixed sm:relative bottom-0 left-0 w-full sm:w-auto bg-white border-t-2 border-gray-300 sm:border-none z-10">
+            <ul className="menu menu-horizontal w-full justify-evenly px-5 sm:px-1">
+              {navLinks}
+            </ul>
           </div>
+
           <div className="navbar-end">
             <Button to="https://github.com/programmerrakibul">
               <Github

@@ -3,12 +3,9 @@ import Container from "../Container/Container";
 
 const Footer = () => {
   return (
-    <footer className=" text-white py-8 bg-gradient-to-br from-[#632EE3] to-[#9F62F2]">
+    <footer className=" text-white py-8 bg-gradient-to-br from-[#632EE3] to-[#9F62F2] mb-[46px] sm:mb-0">
       <Container>
         <div className="space-y-6">
-          <div>
-            
-          </div>
           <hr className="text-gray-300" />
 
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
