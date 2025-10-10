@@ -2,7 +2,7 @@
 @plugin "daisyui";
 
 a.nav-links {
-  @apply font-medium text-base opacity-90 bg-transparent duration-300 relative py-0.5;
+  @apply font-medium text-base opacity-90 bg-transparent duration-300 relative py-0.5 w-fit;
 }
 
 a.nav-links:hover,
