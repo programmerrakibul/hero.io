@@ -3,12 +3,11 @@ import Container from "../../Container/Container";
 import AppContext from "../../../Contexts/AppContext";
 import AppCard from "../../AppCard/AppCard";
 import notFoundImg from "../../../assets/App-Error.png";
-import { useNavigate } from "react-router";
+import Button from "../../Button/Button";
 
 const Installation = () => {
   const [sortOrder, setSortOrder] = useState("");
   const { installedApps } = useContext(AppContext);
-  const navigate = useNavigate();
   const displayApps = sortOrder
     ? installedApps.sort((a, b) => {
         if (sortOrder === "high") {
@@ -71,12 +70,7 @@ const Installation = () => {
                   browse and install a variety of apps to suit your needs and
                   preferences.
                 </p>
-                <button
-                  onClick={() => navigate("/apps")}
-                  className="btn font-semibold text-white bg-gradient-to-br hover:bg-gradient-to-t from-[#632EE3] to-[#9F62F2]"
-                >
-                  Browse Apps
-                </button>
+                <Button to="/apps">Browse Apps</Button>
               </div>
             </div>
           )}

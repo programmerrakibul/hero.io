@@ -1,8 +1,8 @@
-import { useLocation, useNavigate } from "react-router";
+import { useLocation } from "react-router";
 import notFoundImg from "../../assets/App-Error.png";
+import Button from "../Button/Button";
 
 const AppNotFound = () => {
-  const navigate = useNavigate();
   const { pathname } = useLocation();
   const isInAppDetails = pathname.includes("/app-details");
 
@@ -15,20 +15,13 @@ const AppNotFound = () => {
       )}
       <div className="text-center space-y-4">
         <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">
-          Oops, App Not Found!
+          {isInAppDetails && "Oops,"} App Not Found!
         </h3>
         <p className="text-[#627382] text-sm sm:text-base">
           The App you are {isInAppDetails ? "requesting" : "searching"} is not
           found on our system. {isInAppDetails && "please try another apps"}
         </p>
-        {isInAppDetails && (
-          <button
-            onClick={() => navigate("/apps")}
-            className="btn font-semibold text-white bg-gradient-to-br hover:bg-gradient-to-t from-[#632EE3] to-[#9F62F2]"
-          >
-            Browse Apps
-          </button>
-        )}
+        {isInAppDetails && <Button to="/apps">Browse Apps</Button>}
       </div>
     </div>
   );

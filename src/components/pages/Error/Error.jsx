@@ -2,11 +2,9 @@ import Container from "../../Container/Container";
 import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 import ErrorImg from "../../../assets/error-404.png";
-import { useNavigate } from "react-router";
+import Button from "../../Button/Button";
 
 const Error = () => {
-  const navigate = useNavigate();
-
   return (
     <>
       <Navbar />
@@ -23,12 +21,7 @@ const Error = () => {
               <p className="text-[#627382] text-sm sm:text-base">
                 The page you are looking for is not available.
               </p>
-              <button
-                onClick={() => navigate("/")}
-                className="btn font-semibold text-white bg-gradient-to-br from-[#632EE3] to-[#9F62F2]"
-              >
-                Go Back
-              </button>
+              <Button to="/">Go Back</Button>
             </div>
           </div>
         </Container>

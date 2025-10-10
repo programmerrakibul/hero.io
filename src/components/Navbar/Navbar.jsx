@@ -3,6 +3,7 @@ import Container from "../Container/Container";
 import logo from "../../assets/logo.png";
 import "./Navbar.css";
 import { Github, TextAlignJustify } from "lucide-react";
+import Button from "../Button/Button";
 
 const Navbar = () => {
   const navItems = ["Home", "Apps", "Installation"];
@@ -51,14 +52,14 @@ const Navbar = () => {
             <ul className="menu menu-horizontal px-1">{navLinks}</ul>
           </div>
           <div className="navbar-end">
-            <Link to="https://github.com/programmerrakibul" className="nav-btn">
+            <Button to="https://github.com/programmerrakibul">
               <Github
                 fill="#632EE3"
                 size={20}
                 className="bg-white rounded-full"
               />
               <span>Contribute</span>
-            </Link>
+            </Button>
           </div>
         </div>
       </Container>

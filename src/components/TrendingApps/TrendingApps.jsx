@@ -3,6 +3,7 @@ import useAppsData from "../../Hooks/useAppsData";
 import AppCard from "../AppCard/AppCard";
 import Container from "../Container/Container";
 import Spinner from "../Spinner/Spinner";
+import Button from "../Button/Button";
 
 const TrendingApps = () => {
   const { appData, loading } = useAppsData();
@@ -32,12 +33,7 @@ const TrendingApps = () => {
               {singleAppElements}
             </div>
             <div className="text-center">
-              <Link
-                to="apps"
-                className="btn text-white bg-gradient-to-br hover:bg-gradient-to-t from-[#632EE3] to-[#9F62F2] duration-300"
-              >
-                Show All
-              </Link>
+              <Button to="apps">Show All</Button>
             </div>
           </>
         )}
